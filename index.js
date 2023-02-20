@@ -1,18 +1,23 @@
-function shadowingeasy(options)
+export default function shadowingeasy(options)
 {
-    let images=document.querySelector('.shadowingeasy');
-
+    let images=document.querySelectorAll('.shadowingeasy');
+    console.log(images);
+    console.log(options);
     if(options.shadow_type==='hard')
-    options.shadow_type==='0px';
+    {
+        options.shadow_type==='0px';
+    }
     else
-     options.shadow_type='15px';
-
-     images.forEach(image=>{
-        image.style.boxShadow=`10px 10px ${options.shadow_type} 1px rgba(0,0,0,0.12)`;
-        if(options.padding)
+    {
+        options.shadow_type='15px';
+    }
+    images.forEach(image => {
+        console.log(image);
+        image.style.boxShadow="10px 20px 30px black";
+        image.style.borderRadius="20px";
+        if(options.margin)
         {
-            image.style.padding='1em';
-        }
-     })
+            image.style.margin= "50px";
+        } 
+      });
 }
-module.exports.shadowingeasy=shadowingeasy;
