@@ -1,4 +1,4 @@
-function shadowing(options)
+function shadowingeasy(options)
 {
     let images=document.querySelector('.shadowing');
 
@@ -15,4 +15,4 @@ function shadowing(options)
         }
      })
 }
-module.exports.shadowing=shadowing;
+module.exports.shadowingeasy=shadowingeasy;
