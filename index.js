@@ -1,6 +1,6 @@
 function shadowingeasy(options)
 {
-    let images=document.querySelector('.shadowing');
+    let images=document.querySelector('.shadowingeasy');
 
     if(options.shadow_type==='hard')
     options.shadow_type==='0px';
