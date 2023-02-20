@@ -4,14 +4,14 @@ A perfect shadowing
 
 # installation
 
-`npm i shadowing --save`
+`npm i shadowingeasy --save`
 
 
 Then...
 
 ```
-import {shadowing} from 'shadowing;
-shadowing({
+import {shadowingeasy} from 'shadowingeasy';
+shadowingeasy({
       shadow_type:'soft',
       padding:false
 });
